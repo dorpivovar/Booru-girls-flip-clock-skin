@@ -1,0 +1,65 @@
+#timewrapper {
+	position:absolute;
+	left:3px;
+	top:4px;
+}
+#Hour, #Minute, #Second, #HourBack, #MinuteBack, #SecondBack {
+	position: absolute;
+	float:left;
+	width: 140px;
+	height: 128px;
+}
+#HourUpper, #HourLower, #HourLowerBack, #HourUpperBack, #MinuteUpper, #MinuteLower, #MinuteUpperBack, #MinuteLowerBack, #SecondUpper, #SecondLower, #SecondUpperBack, #SecondLowerBack{
+	position:relative;
+	width:128px;
+	height:64px;
+}
+#HourUpper, #HourUpperBack, #MinuteUpper, #MinuteUpperBack, #SecondUpper, #SecondUpperBack{
+	bottom:0px;
+	overflow:hidden;
+}
+#HourLower, #HourLowerBack, #MinuteLower, #MinuteLowerBack, #SecondLower, #SecondLowerBack{
+	top:0px;
+	overflow:hidden;
+}
+#HourLower, #MinuteLower, #SecondLower{
+	overflow:hidden;
+}
+#HourUpper img, #MinuteUpper img, #SecondUpper img{
+	position: absolute;
+	bottom: 0px;
+	vertical-align:bottom;
+	width:64px;
+	height:64px;
+}
+#HourLower img, #MinuteLower img, #SecondLower img{
+	position:absolute;
+	top: 0px;
+	vertical-align:top;
+	width:64px;
+	height:64px;
+}
+#HourLowerLeft , #HourUpperLeft  , #MinuteLowerLeft , #MinuteUpperLeft, #SecondLowerLeft, #SecondUpperLeft {
+	left:0px;
+}
+#HourLowerRight , #HourUpperRight  , #MinuteLowerRight , #MinuteUpperRight, #SecondLowerRight, #SecondUpperRight {
+	right:0px;
+}
+
+#Hour, #Minute, #Second {
+	z-index:10;
+}
+#Minute, #MinuteBack {
+	margin-left:140px;
+}
+#Second, #SecondBack {
+	margin-left:280px;
+}
+#HourBack, #MinuteBack, #SecondBack {
+	z-index:0;
+}
+
+#HourUpperLeft, #HourUpperRight, #HourLowerLeft, #HourLowerRight, #MinuteUpperLeft, #MinuteUpperRight, #MinuteLowerLeft, #MinuteLowerRight, #SecondUpperLeft, #SecondUpperRight, #SecondLowerLeft, #SecondLowerRight{
+	width:64px;
+	height:64px;
+}
